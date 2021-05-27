@@ -24,7 +24,7 @@
   <body>
     <div id="main" class="main">
       <canvas id="playField" width="1000" height="600"></canvas>
-      <img id="background" src="./images/background.png"></img>
+      <!-- <img id="background" src="./images/background.png"></img> -->
       <div id="display">
         <div id="score"></div>
         <button id="start">Start</button>
@@ -45,8 +45,8 @@
       margin: 0 auto;
       width: var(--width);
       height: var(--height);
-      font-size: 32px;
-      font-family: Arial, Helvetica, sans-serif;
+      font-size: 28px;
+      font-family: 'Courier New', Courier, monospace;
     }
 
     canvas {
@@ -58,6 +58,8 @@
       border-left: 1px solid grey;
       border-right: 1px solid grey;
       margin-bottom: 40px;
+      background:#dff8d0 url('./images/jellyway_logo_jellies.png')no-repeat center center;
+      background-size: 70%;
     }
 
     #display {
@@ -71,6 +73,15 @@
     #score,
     #info {
       width: 200px;
+    }
+
+    #start {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 28px;
+      border-bottom: 2px solid #041A1D;
+      background-color: #88c170;
+      font-weight:600;
+      color: #041A1D;
     }
   </style>
 </html>

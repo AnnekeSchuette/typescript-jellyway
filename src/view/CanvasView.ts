@@ -2,14 +2,13 @@
 import { Brick } from '../sprites/Brick'
 import { Paddle } from '../sprites/Paddle'
 import { Ball } from '../sprites/Ball'
-import { BRICK_IMAGES } from '~/setup';
 
 export class CanvasView {
   canvas: HTMLCanvasElement;
-  private context: CanvasRenderingContext2D | null;
-  private scoreDisplay: HTMLObjectElement | null;
-  private start: HTMLObjectElement | null;
-  private info: HTMLObjectElement | null;
+  private context: CanvasRenderingContext2D | null
+  private scoreDisplay: HTMLObjectElement | null
+  private start: HTMLObjectElement | null
+  private info: HTMLObjectElement | null
 
   constructor(canvasName: string){
     this.canvas = document.querySelector(canvasName) as HTMLCanvasElement

@@ -4,8 +4,8 @@ import { Brick } from './sprites/Brick'
 import { Paddle } from './sprites/Paddle'
 import { Collision } from './Collision'
 // images
-import PADDLE_IMAGE from './images/paddle.png'
-import BALL_IMAGE from './images/ball.png'
+import PADDLE_IMAGE from './images/paddle_retro2.png'
+import BALL_IMAGE from './images/ball_retro2.png'
 // Level + Colors
 import {
   PADDLE_WIDTH,
