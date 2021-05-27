@@ -13,7 +13,7 @@ import {
 export function createBricks(): Brick[] {
   // reduce instead of map => loop through every item of LEVEL, but strip out the zeros
   return LEVEL.reduce((acc, cell, i) => {
-    const row = Math.floor(i + 1) / STAGE_COLS
+    const row = Math.floor((i + 1) / STAGE_COLS)
     const col = i % STAGE_COLS
 
     // get position of brick
