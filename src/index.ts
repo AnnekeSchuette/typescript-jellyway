@@ -67,6 +67,12 @@ function gameLoop(
       score += 1
       view.drawScore(score)
     }
+    // Game over when ball leaves play field
+    if (ball.pos.y > view.canvas.height) gameOver = true
+    // Game Won, display 'win'
+    if (bricks.length === 0) return setGameWin(view)
+    // Return, if game over and don't run requestAnimationFrame
+    if (gameOver) return setGameOver(view)
 
     requestAnimationFrame(() => gameLoop(view, bricks, paddle, ball, collision))
   }
